@@ -1,0 +1,9 @@
+{
+  "name": "web-public",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/clients/public",
+  "projectType": "application",
+  "tags": ["type:ui", "scope:public"],
+  "// targets": "to see all targets run: nx show project web-public --web",
+  "targets": {"serve": {     "executor": "@nx/next:server",     "options": {       "buildTarget": "web-public:build",       "dev": true    }   }}
+}
